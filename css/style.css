@@ -1,0 +1,834 @@
+/* 기본설정 */
+@font-face{
+    font-family:"NanumBarunGothic";
+    src:url("/fonts/NanumBarunGothic.ttf"), url("/fonts/NanumBarunGothic.eot"), url("/fonts/NanumBarunGothic.woff")
+}
+@font-face{
+    font-family:"NanumBarunGothicB";
+    src:url("/fonts/NanumBarunGothicBold.ttf"), url("/fonts/NanumBarunGothicBold.eot"), url("/fonts/NanumBarunGothicBold.woff")
+}
+ul.skipmenu_list li a, .hidden{
+    width:1px; height:1px; font-size:0px; line-height:0px; position:absolute; z-index:99999;
+}
+ul.skipmenu_list li a:focus{
+    width:100%; height:30px; font-size:12px; line-height:30px; background:black; color:white; text-align:center; text-decoration:none;
+}
+/* 기본설정 끝 */
+
+/* 메인 비주얼 스와이퍼 시작 */ 
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width:100%; 
+}
+/* 메인 비주얼 스와이퍼 끝 */
+
+div#total_wrap{
+    width:100%; position:absolute; left:0px; top:0px; 
+}
+
+/* 헤더영역 시작 */
+div#header_wrap{
+    width:100%; height:70px; float:left; background:rgba(73,10,115,0.7); position:fixed; left:0px; top:0px; box-sizing:border-box; z-index:10;
+}
+header{
+    width:1200px; height:100%; margin:0px auto; position:relative; left:0px; top:0px; z-index:1;
+}
+h1#logo{
+    width:151px; height:34px; position:absolute; left:0px; top:20px; overflow:hidden;
+}
+h1#logo img{
+    width:100%; position:absolute; top:-35px;
+}
+nav#mainmenu{
+    width:65%; height:37px; position:absolute; right:0px; top:30px; 
+}
+ul#mainmenu_list{
+    width:100%; height:100%; 
+}
+ul#mainmenu_list>li{
+    width:16.66%; height:100%; float:left; text-align:center; position:relative; left:0px; top:0px; 
+}
+ul#mainmenu_list>li>a{
+    width:100%; height:100%; display:block; font:normal 1em "NanumBarunGothic"; text-decoration:none; color:white;
+}
+ul#mainmenu_list>li>a.selected{
+    color:#490a73 !important; 
+}
+span#main_bar{
+    width:80px; height:3px; display:block; background:#490a73; border-radius:3px; position:absolute; left:0px; display:none;
+}
+ul.submenu_list{
+    width:135px; position:absolute; left:0px; top:60px; opacity:0; display:none; 
+}
+ul.submenu_list>li{
+    width:100%; margin-bottom:17px;
+}
+ul.submenu_list>li>a{
+    font:normal 0.875em "NanumBarunGothic"; text-decoration:none; color:#757575;
+}
+ul.submenu_list>li>a:hover{
+    color:#602080; 
+}
+div#sub_bg{
+    width:100%; height:1px; background:white; position:absolute; left:0px; top:70px; opacity:0; display:none; 
+}
+
+nav#mobilemenu{
+    width:700px; height:100%; position:fixed; right:0px; top:0px; background:white; display:none;
+}
+h2.mobilemenu_icon{
+    width:30px; height:20px; position:fixed; right:20px; top:30px; overflow:hidden; 
+}
+h2.mobilemenu_icon img{
+    width:100%; position:absolute; right:0px; top:30px; 
+}
+div#mobilemenu_wrap{
+    width:100%; height:100%; position:absolute; right:0px; top:0px; 
+}
+div#mobilemenu_wrap p{
+    width:100%; height:180px; background:#490a73; font:normal 20px/30px "NanumBarunGothic"; color:white; padding-top:60px; padding-left:30px; box-sizing:border-box;
+}
+span#mobileclose_btn{
+    width:20px; height:20px; display:block; position:absolute; right:30px; top:40px; 
+}
+ul#mobileloginmenu{
+    width:100%; height:50px; 
+}
+ul#mobileloginmenu li{
+    width:50%; height:100%; background:#3c3c3c; font:normal 14px/50px "NanumBarunGothic"; color:white; text-align:center; float:left; border-right:solid 1px white; box-sizing:border-box;
+}
+ul#mobileloginmenu li:last-child{
+    border-right:none;
+}
+ul#mobilemenu_list{
+    width:100%; height:400px; overflow:scroll; 
+}
+ul#mobilemenu_list>li{
+    width:100%; height:55px; font:normal 14px/55px "NanumBarunGothic"; border-bottom:solid 1px #E3E3E3; box-sizing:border-box; text-indent:30px; 
+    position:relative; left:0px; top:0px; overflow:hidden;
+}
+ul#mobilemenu_list>li>a{
+    color:#3c3c3c; text-decoration:none;
+}
+ul.mobilesubmenu_list>li>a{
+    color:#3c3c3c; text-decoration:none;
+}
+span.mobile_icon{
+    width:55px; height:55px; text-align:center; text-indent:0px; display:block; position:absolute; right:10px; top:0px; 
+    -webkit-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -o-transition:0.4s ease;
+}
+span.mobile_selected{
+    -webkit-transform:rotate(180deg); 
+    -moz-transform:rotate(180deg); 
+    -ms-transform:rotate(180deg); 
+    -o-transform:rotate(180deg); 
+}
+ul.mobilesubmenu_list{
+    width:100%; position:absolute; left:0px; top:55px; 
+}
+ul.mobilesubmenu_list>li{
+    width:100%; height:50px; background:#f6f6f6; font:normal 13px/50px "NanumBarunGothic"; color:#3c3c3c; border-bottom:solid 1px #E3E3E3; box-sizing:border-box; text-indent:40px; 
+}
+ul.mobilesubmenu_list>li:first-child{
+    border-top:solid 1px #E3E3E3; 
+}
+div#mobile_graylayer{
+    width:100%; height:100%; background:black; opacity:0.8; position:fixed; left:0px; top:0px; 
+}
+/* 헤더영역 끝 */
+/* 비주얼영역 시작 */
+div#visual_wrap{
+    width:100%; height:900px; float:left; position:relative; left:0px; top:0px;
+}
+div#mobile_visual_wrap{
+    display:none;
+}
+ul#visual_list{
+    width:100%; float:left; position:absolute; left:0px; top:0px;
+}
+ul#visual_list li{
+    width:100%; float:left; position:absolute; left:0px; top:0px;
+}
+img.mainvisual{
+    width:100%; display:block;
+}
+div#visual_btn_prev{
+    width:40px; height:40px; position:absolute; left:30px; top:50%;
+}
+div#visual_btn_next{
+    width:40px; height:40px; position:absolute; right:30px; top:50%;
+}
+span.btn_bg{
+    width:100%; height:100%; background:rgba(47,17,89,0.6); display:block; 
+    -webkit-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -o-transition:0.4s ease;
+}
+span.selected{
+    background:rgba(47,17,89,0.9);
+    -webkit-transform:rotate(45deg) scale(1.2);
+    -moz-transform:rotate(45deg) scale(1.2);
+    -ms-transform:rotate(45deg) scale(1.2);
+    -o-transform:rotate(45deg) scale(1.2);
+}
+span.btn_img img{
+    display:block; position:absolute; top:10px; left:12px;
+}
+/* 비주얼영역 끝 */
+/* best여행지 시작 */
+div#best_wrap{
+    width:100%; height:720px; float:left; margin-bottom:120px;
+}
+section#best_inner{
+    width:1200px; height:100%; margin:0px auto; padding-top:120px; 
+}
+h2.contents_title{
+    width:100%; font:normal 2em "NanumBarunGothicB"; text-align:center; color:#3c3c3c; margin-bottom:40px; 
+}
+h2.best_title{
+    width:100%; position:relative; left:0px; top:100px; opacity:0;
+}
+ul.best_list{
+    width:100%; height:500px; margin-bottom:40px;
+}
+ul.best_list li{
+    width:24.25%; float:left; margin-right:1%; position:relative; left:0px; top:150px; overflow:hidden; opacity:0; 
+}
+ul.best_list li:last-child{
+    margin-right:0px;
+}
+ul.best_list li a{
+    text-decoration:none;
+}
+p.best_img img{
+    width:100%; display:block; margin-bottom:30px; 
+}
+p.best_title{
+    width:100%; font:normal 1.5em "NanumBarunGothicB"; color:#3c3c3c; margin-bottom:20px;
+}
+p.best_text{
+    width:92%; font:normal 1em/24px "NanumBarunGothic"; color:#4C4C4C; text-align:justify;
+}
+div.gray_layer{
+    width:100%; height:360px; background:rgba(0,0,0,0.4); position:absolute; left:0px; top:0px; opacity:0;
+}
+div.gray_layer span{
+    width:20%; position:absolute; left:50%; top:50%; margin-left:-10%; margin-top:-10%;
+}
+div.gray_layer span img{
+    width:100%; display:block;
+}
+/* best여행지 끝 */
+/* today싱가포르 시작 */
+div#today_wrap{
+    width:100%; height:300px; float:left; background:#2f1159; 
+}
+section#today_inner{
+    width:1200px; height:100%; margin:0px auto; padding-top:50px; 
+}
+h2.today_title{
+    width:100%; color:white; position:relative; left:0px; top:100px; opacity:0;
+}
+ul#today_list{
+    width:100%; height:109px; 
+}
+ul#today_list li{
+    width:33.333%; height:100%; float:left; text-align:center; position:relative; left:0px; top:100px; opacity:0;
+}
+img.today_icon{
+    margin-bottom:30px;
+}
+p.today_text{
+    font:normal 1em "NanumBarunGothic"; color:white;
+}
+/* today싱가포르 끝 */
+/* 여행정보 시작 */
+div#infor_wrap{
+    width:100%; height:470px; float:left; margin-bottom:120px; 
+}
+section#infor_inner{
+    width:1200px; height:100%; margin:0px auto; padding-top:120px; 
+}
+h2.infor_title{
+    width:100%; position:relative; left:0px; top:100px; opacity:0;
+}
+div#infor_list_wrap{
+    display:block;
+}
+div#infor_swiper_wrap{
+    display:none;
+}
+ul#infor_list{
+    width:100%; height:250px; 
+}
+ul#infor_list li{
+    width:32.66%; height:100%; float:left; margin-right:1%; position:relative; left:0px; top:100px; opacity:0;
+}
+ul#infor_list li:nth-child(1){
+    background:url("/images/infor_img01.gif") no-repeat; background-size:cover; 
+}
+ul#infor_list li:nth-child(2){
+    background:url("/images/infor_img02.gif") no-repeat; background-size:cover; 
+}
+ul#infor_list li:nth-child(3){
+    background:url("/images/infor_img03.gif") no-repeat; margin-right:0px; background-size:cover; 
+}
+ul#infor_list li a{
+    width:50%; height:85px; display:block; border-top:solid 1px white; text-decoration:none; 
+    position:absolute; left:50%; top:50%; margin-left:-25%; margin-top:-35px; box-sizing:border-box;
+}
+ul#infor_list li a.selected{
+    width:50%; border-top:solid 6px white;
+}
+span.titile_text{
+    width:170%; font:normal 1.5em "NanumBarunGothicB"; color:white; text-align:center; display:block; 
+    position:absolute; left:50%; top:20px; margin-left:-85%; 
+}
+span.detail_text{
+    width:100%; font:normal 0.875em "NanumBarunGothic"; color:white; text-align:center; display:block; margin-top:10px; 
+    position:absolute; left:50%; top:20px; margin-left:-50%; opacity:0;
+}
+span.line_bottom{
+    width:100%; display:block; border-top:solid 1px white; margin-top:15px; 
+    position:absolute; left:50%; top:0px; margin-left:-50%; opacity:0;
+}
+div#infor_swiper_wrap{
+    width:100%; height:100%; 
+}
+span.titile_text a{
+    width:100%; height:150px; color:white; text-decoration:none; display:block; padding-top:80px;
+}
+/* 여행정보 끝 */
+/* 테마여행 시작 */
+div#theme_wrap{
+    width:100%; height:450px; float:left; position:relative; left:0px; top:0px;
+}
+section#theme_inner{
+    width:1200px; height:70px; position:absolute; left:50%; margin-left:-600px; 
+}
+h2.theme_title{
+    width:150px; height:32px; text-align:left !important; position:relative; left:0px; top:100px; opacity:0;
+}
+nav#theme_submenu{
+    width:50%; height:40px; position:absolute; right:0px; top:5px; 
+}
+ul#theme_submenu_list{
+    width:100%; height:100%; 
+}
+ul#theme_submenu_list>li{
+    width:25%; height:100%; float:left; text-align:center; font:normal 1.125em "NanumBarunGothicB"; 
+}
+ul#theme_submenu_list>li>a{
+    width:100%; height:100%; display:block; text-decoration:none; color:#757575; 
+}
+ul#theme_submenu_list>li>a.selected{
+    color:#3C3C3C; 
+}
+ul#theme_submenu_list>li>a:hover{
+    color:#3C3C3C;
+}
+span#theme_bar{
+    width:80px; height:5px; display:block; background:#2f1159; border-radius:5px; position:absolute; left:0px; top:40px;
+}
+section#theme_contents_wrap{
+    width:100%; height:380px; float:left; position:absolute; left:0px; bottom:0px; overflow:hidden;
+}
+div#theme_contents_img{
+    width:50%; height:100%; float:right; background:url("/images/theme_img00.jpg") no-repeat; background-size:cover; 
+    -webkit-transition:0.5s ease-out;
+    -moz-transition:0.5s ease-out;
+    -ms-transition:0.5s ease-out;
+    -o-transition:0.5s ease-out;
+    -webkit-transform:scale(1.0);
+    -moz-transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    -o-transform:scale(1.0);
+}
+div#theme_contents_img.selected{
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+div#theme_contents_textbox_wrap{
+    width:50%; height:100%; background:#2f1159; position:relative; left:0px; top:0px; 
+}
+div#theme_contents_textbox_inner{
+    width:400px; height:220px; position:absolute; right:170px; top:60px; 
+}
+ul#theme_contents_text_list{
+    width:100%; height:100%; 
+}
+ul#theme_contents_text_list li{
+    width:100%; position:absolute; left:0px; top:100px; opacity:0;
+}
+p.theme_contents_title{
+    width:100%; font:normal 24px "NanumBarunGothicB"; color:white; margin-bottom:40px; 
+}
+p.theme_contents_text{
+    width:100%; font:normal 16px/24px "NanumBarunGothic"; color:#D2D2D2; margin-bottom:50px; text-align:justify;
+}
+p#theme_contents_btn{
+    width:120px; height:40px; border-radius:20px; background:#7f5cec; text-align:center; font:normal 12px/40px "NanumBarunGothic"; 
+    position:relative; left:0px; top:0px; overflow:hidden;
+}
+p#theme_contents_btn span{
+    width:0px; height:40px; display:block; position:absolute; left:0px; top:0px; background:#f3c53c; border-radius:40px;
+}
+p#theme_contents_btn a{
+    width:100%; height:100%; display:block; color:white; text-decoration:none; position:relative; z-index:10;
+}
+/* 테마여행 끝 */
+/* 이벤트 시작 */
+div#event_wrap{
+    width:100%; height:850px; float:left; margin-bottom:150px;
+}
+section#event_inner{
+    width:1200px; height:100%; margin:0px auto; padding-top:120px;
+}
+h2.event_title{
+    width:100%; position:relative; left:0px; top:100px; opacity:0;
+}
+ul#event_list{
+    width:100%; height:620px; 
+}
+ul#event_list li{
+    width:32.66%; height:100%; float:left; background:url("/images/event_img01.gif") no-repeat center;  margin-right:1%; position:relative; left:0px; top:100px; opacity:0;
+}
+ul#event_list li:last-child{
+    margin-right:0px;
+}
+ul#event_list li.selected{
+    box-shadow:rgba(0,0,0,0.2) 7px 7px 10px 5px;
+}
+p.event_textbox{
+    width:100%; height:130px; background:rgba(39,37,47,0.7); position:absolute; left:0px; bottom:0px; padding-top:25px;
+}
+span.event_text{
+    display:block; color:white; margin-left:40px;
+}
+span.event_title{
+    font:normal 18px "NanumBarunGothicB"; margin-bottom:12px;
+}
+span.event_subtitle{
+    font:normal 12px "NanumBarunGothic"; margin-bottom:30px;
+}
+span.event_date{
+    font:normal 16px "NanumBarunGothic"; 
+}
+/* 이벤트 끝 */
+/* 하단영역 시작 */
+div#footer_wrap{
+    width:100%; height:300px; clear:both; background:#27252F; position:relative; left:0px; top:0px; 
+}
+footer{
+    width:1200px; height:100%; margin:0px auto; position:relative; left:0px; top:0px; 
+}
+img#footer_logo{
+    width:151px; height:34px; position:absolute; left:0px; top:80px; 
+}
+div#footer_infor_wrap{
+    width:70%; position:absolute; left:200px; top:87px; 
+}
+div#footer_infor_wrap p{
+    font:normal 14px/21px "NanumBarunGothic"; color:white; margin-bottom:12px;
+}
+/* 하단영역 끝 */
+/* 바로가기 메뉴 시작 */
+div#quick_top_menu{
+    width:40px; height:40px; position:fixed; right:50px; bottom:50px; opacity:0; z-index:10;
+}
+div#quick_top_menu img{
+    display:block;
+}
+/* 바로가기 메뉴 끝 */
+/* 서브 페이지 시작 */
+/* 테마여행 액티비티 페이지 시작 */
+div#theme_visual{
+    width:100%; height:490px; background:url("/images/theme_page_visual.jpg") no-repeat; background-size:cover;
+}
+div#subPage_title{
+    width:1200px; height:40px; margin:0px auto; padding-top:220px; font:normal 2.25em "NanumBarunGothic"; text-align:center; color:white; text-shadow:1px 2px 2px #333333; 
+}
+div#subPage_wrap{
+    width:100%; min-height:2000px; float:left; position:relative; 
+}
+div#subTab_wrap{
+    width:100%; height:60px; background:rgba(47,17,89,0.7); position:absolute; left:0px; top:-60px;
+}
+nav#subTap_item4_inner{
+    width:1200px; height:100%; margin:0px auto;
+}
+ul#subTab_item4_list{
+    width:100%; height:100%; 
+}
+ul#subTab_item4_list li{
+    width:25%; height:100%; background:#2F1159; float:left; font:normal 1em/60px "NanumBarunGothic"; text-align:center; 
+}
+ul#subTab_item4_list li a{
+    width:100%; height:100%; display:block; color:white; 
+}
+ul#subTab_item4_list li.selected{
+    background:white; color:#3C3C3C; font:normal 1em/60px "NanumBarunGothicB";
+}
+ul#subTab_item4_list li.selected a{
+    color:#3C3C3C; 
+}
+div#Con_wrap{
+    width:100%; min-height:2500px; float:left; 
+}
+section#Con_inner{
+    width:1200px; min-height:2500px; margin:0px auto; 
+}
+nav#indicator{
+    width:100%; height:20px; float:left; margin-top:40px; 
+}
+ul#indicator_list{
+    width:100%; height:100%;
+}
+ul#indicator_list li{
+    float:left; background:url("/images/route_icon.png") no-repeat; margin-right:10px; text-indent:20px; font:normal 14px/20px "NanumBarunGothic"; color:#3C3C3C;
+}
+ul#indicator_list li:first-child{
+    background:none; text-indent:0px;
+}
+div#Con_title{
+    width:100%; height:75px; float:left; margin-top:80px; 
+}
+div#Con_title p{
+    width:530px; height:100%; font:normal 1.75em/42px "NanumBarunGothicB"; text-align:center; color:#3C3C3C; margin:0px auto; 
+}
+div#acCon_map img{
+    width:100%; margin-top:80px;
+}
+div#acCon_list_wrap{
+    width:100%; min-height:1600px; float:left; margin-top:80px; 
+}
+ul#acCon_list{
+    width:100%; min-height:1800px;
+}
+ul#acCon_list li{
+    width:32%; float:left; margin-right:2%; margin-bottom:24px; position:relative; left:0px; top:0px; 
+}
+ul#acCon_list li:nth-child(3n){
+    margin-right:0px;
+}
+ul#acCon_list li img{
+    width:100%; display:block;
+}
+p.acCon_numbox{
+    width:49px; height:43px; position:absolute; left:0px; top:0px; font:normal 1em/43px "NanumBarunGothicB"; text-align:center; color:white;
+    background:#F2C53D; border-radius:0px 0px 23px 23px;
+}
+p.acCon_textbox{
+    width:100%; height:30%; background:rgba(255,255,255,0.85); position:absolute; left:0px; bottom:0px;
+}
+span.acCon_name{
+    display:block; font:normal 1.5em "NanumBarunGothicB"; color:#3C3C3C; text-align:center; margin-top:35px; 
+}
+span.acCon_text{
+    width:70%; display:block; font:normal 1em/24px "NanumBarunGothic"; color:#3C3C3C; text-align:center; margin:10px auto; 
+}
+/* 테마여행 액티비티 페이지 끝 */
+/* 여행지 정보 페이지 시작 */
+div#infor_visual{
+    width:100%; height:490px; background:url("/images/infor_page_visual.jpg") no-repeat; background-size:cover;
+}
+nav#subTap_item3_inner{
+    width:1200px; height:100%; margin:0px auto;
+}
+ul#subTab_item3_list{
+    width:100%; height:100%; 
+}
+ul#subTab_item3_list li{
+    width:33.333%; height:100%; background:#2F1159; float:left; font:normal 1em/60px "NanumBarunGothic"; text-align:center; 
+}
+ul#subTab_item3_list li.selected{
+    background:white; font:normal 1em/60px "NanumBarunGothicB";
+}
+ul#subTab_item3_list li a{
+    width:100%; height:100%; display:block; color:white; text-decoration:none;
+}
+ul#subTab_item3_list li.selected a{
+    color:#3C3C3C; text-decoration:none;
+}
+div#infor_text{
+    width:100%; height:120px; float:left; margin-top:50px;
+}
+div#infor_text p{
+    width:100%; height:100%; font:normal 1em/27px "NanumBarunGothic"; color:#3C3C3C; text-align:justify;
+}
+div#inforCon_list_wrap{
+    width:100%; min-height:2500px; float:left; padding-top:50px;
+}
+ul#inforCon_list{
+    width:100%; min-height:2500px;
+}
+ul#inforCon_list li{
+    width:100%; height:620px; float:left; position:relative; left:0px; top:0px; 
+}
+ul#inforCon_list li p img{
+    width:100%; 
+}
+p.infor_left_img{
+    width:54%; float:left; 
+}
+p.infor_right_img{
+    width:54%; float:right; 
+}
+p.inforCon_textbox{
+    width:50%; min-height:340px; background:#f6f6f6; padding-top:50px; float:left;
+}
+p.inforCon_right_textbox{
+    position:absolute; right:0px; top:160px;
+}
+p.inforCon_left_textbox{
+    position:absolute; left:0px; top:160px;
+}
+p span.inforCon_numbox{
+    width:30px; height:30px; display:block; background:#F2C53D; border-radius:30px; float:left; margin-left:40px;
+    font:normal 1em/36px "NanumBarunGothicB"; text-align:center; color:white;
+}
+p span.inforCon_title{
+    width:80%; height:40px; font:normal 1.125em/43px "NanumBarunGothic"; color:#3C3C3C; margin-left:12px;
+}
+p span.inforCon_text{
+    width:80%; height:200px; display:block; font:normal 1em/24px "NanumBarunGothic"; color:#757575; text-align:justify; margin:0px auto; margin-top:10px;
+}
+/* 여행지 정보 페이지 끝 */
+/* 공유메뉴 시작 */
+div#shareMenu_list_wrap{
+    width:100%; height:50px; float:left; margin-bottom:100px; padding-top:100px; 
+}
+ul#shareMenu_list{
+    width:300px; height:100%; margin:0px auto; 
+}
+ul#shareMenu_list li{
+    float:left; margin-right:80px;
+}
+ul#shareMenu_list li:last-child{
+    margin-right:0px;
+}
+/* 공유메뉴 끝 */ 
+/* 여행준비 페이지 시작 */
+div#prepare_list_wrap{
+    width:100%; min-height:2050px; float:left; margin-top:80px; 
+}
+ul#prepare_list{
+    width:100%; min-height:2050px; 
+}
+ul#prepare_list li{
+    width:100%; height:240px; float:left; border-bottom:solid 2px #E3E3E3; 
+}
+ul#prepare_list li:first-child{
+    border-top:solid 2px #E3E3E3;
+}
+ul#prepare_list li:nth-child(2n){
+    background:#F6F6F6;
+}
+p.prepare_img{
+    width:170px; height:170px; float:left; margin-top:35px; margin-left:30px; margin-right:50px;
+}
+p.prepare_title{
+    font:normal 1.5em "NanumBarunGothic"; margin-top:60px; color:#3C3C3C;
+}
+p.prepare_text{
+    font:normal 1em/24px "NanumBarunGothic"; margin-top:15px; color:#3C3C3C;
+}
+p.prepare_text_480{
+    font:normal 1em/24px "NanumBarunGothic"; display:none; color:#3C3C3C;
+}
+/* 여행준비 페이지 끝 */
+/* 유용한사이트 페이지 시작 */
+div#card_list_wrap{
+    width:100%; min-height:1550px; float:left; margin-top:80px; margin-bottom:100px;
+}
+ul#card_list{
+    width:100%; min-height:1550px;
+}
+ul#card_list li{
+    width:32%; height:480px; float:left; margin-right:2%; margin-bottom:24px; border:solid 1px #E3E3E3; box-sizing:border-box; 
+}
+ul#card_list li:nth-child(3n){
+    margin-right:0px
+}
+p.card_imgbox img{
+    width:100%; display:block
+}
+p.card_textbox{
+    width:100%; height:195px; border-top:solid 1px #E3E3E3; background:white;
+}
+span.card_title{
+    display:block; font:normal 1.313em "NanumBarunGothic"; color:#3C3C3C; text-align:center; margin-bottom:20px; margin-top:30px;
+}
+span.card_text{
+    display:block; font:normal 0.875em "NanumBarunGothic"; color:#757575; text-align:center; margin-bottom:30px;
+}
+span.card_btn{
+    display:block; width:120px; height:40px; background:#f3c53c; border-radius:20px; text-align:center; margin:0px auto;
+}
+span.card_btn:hover{
+    background:#2F1159;
+}
+span.card_btn a{
+    width:100%; height:100%; display:block; font:normal 12px/40px "NanumBarunGothic"; color:white; text-decoration:none;
+}
+/* 유용한사이트 페이지 끝 */ 
+/* 이벤트 페이지 시작 */
+div#event_visual{
+    width:100%; height:490px; background:url("/images/event_page_visual.jpg") no-repeat; background-size:cover;
+}
+/* 이벤트 페이지 끝 */
+/* 이벤트 상세 페이지 시작 */
+div#event_detail_wrap{
+    width:100%; min-height:1500px; float:left; border-top:solid 2px #757575; border-bottom:solid 2px #757575; margin-top:100px; margin-bottom:50px;
+}
+div#event_infor{
+    width:100%; height:45px; border-bottom:solid 2px #E3E3E3; margin-bottom:50px; padding-top:15px
+}
+p#event_infor_state{
+    width:65px; height:30px; float:left; font:normal 12px/30px "NanumBarunGothic"; text-align:center; color:#490A73; border:solid 2px #E3E3E3; border-radius:30px; 
+}
+p#event_infor_title{
+    float:left; font:normal 16px/35px "NanumBarunGothic"; margin-left:15px; color:#3C3C3C;
+}
+p#event_infor_date{
+    float:right; font:normal 16px/35px "NanumBarunGothic"; color:#3C3C3C;
+}
+div#event_poster{
+    width:50%; margin:0px auto; margin-bottom:100px;
+}
+div#event_poster img{
+    width:100%; 
+}
+div#list_btn_wrap{
+    width:100%; height:200px; float:left; 
+}
+p#list_btn{
+    width:160px; height:60px; text-align:center; border:solid 2px #757575; border-radius:60px; margin:0px auto; 
+}
+p#list_btn a{
+    width:100%; height:100%; display:block; font:normal 16px/60px "NanumBarunGothic"; color:#3C3C3C; text-decoration:none;
+}
+/* 이벤트 상세 페이지 끝 */ 
+/* 테마여행 상세 페이지 유니버셜스튜디오 페이지 시작 */
+div#theme_detail_intro{
+    width:100%; height:355px; float:left; margin-top:50px; margin-bottom:80px;
+}
+div#detail_intro_img{
+    width:50%; height:94.5%; background:url("/images/universal_intro_img.jpg") no-repeat; background-size:cover; float:left; margin-top:10px; 
+}
+div#detail_intro_textbox{
+    width:50%; height:100%; background:#2F1159; float:right; position:relative; left:0px; top:0px; padding:80px; box-sizing:border-box;
+}
+p#detail_intro_wish_btn{
+    width:40px; height:40px; position:absolute; right:30px; top:30px; overflow:hidden;
+}
+p#detail_intro_title{
+    width:100%; height:30px; font:normal 1.5em "NanumBarunGothic"; color:white; margin-bottom:20px;
+}
+p#detail_intro_text{
+    width:90%; height:140px; font:normal 1em/24px "NanumBarunGothic"; color:#D5D5D5; text-align:justify; margin-left:20px; 
+}
+div#theme_detail_infor{
+    width:100%; height:385px; float:left; margin-bottom:80px; border-top:solid 1px #757575; padding-top:30px; position:relative; left:0px; top:0px; 
+}
+p.bar{
+    width:50px; height:6px; background:#2F1159; position:absolute; left:0px; top:-3px;
+}
+p.detail_title{
+    width:100%; font:normal 1.5em "NanumBarunGothic"; margin-bottom:30px; color:#3C3C3C;
+}
+ul#detail_infor_list{
+    width:100%; height:300px; 
+}
+ul#detail_infor_list li{
+    width:23.5%; height:100%; float:left; margin-right:2%; border:solid 1px #E3E3E3; box-sizing:border-box; padding:40px;
+}
+ul#detail_infor_list li:last-child{
+    margin-right:0px;
+}
+p.detail_infor_list_title{
+    font:normal 1.125em "NanumBarunGothic"; color:#3C3C3C; text-align:center; margin-bottom:20px;
+}
+p.detail_infor_list_icon{
+    width:100%; text-align:center; margin-bottom:20px;
+}
+p.detail_infor_list_text{
+    font:normal 12px/18px "NanumBarunGothic"; color:#3C3C3C; text-align:center;
+}
+p.detail_infor_list_link_btn{
+    width:120px; height:40px; background:#F2C53D; border-radius:40px; font:normal 12px/40px "NanumBarunGothic"; color:white; text-align:center; margin:0px auto; 
+}
+div#theme_detail_point{
+    width:100%; min-height:1160px; float:left; margin-bottom:50px; border-top:solid 1px #757575; padding-top:30px; position:relative; left:0px; top:0px;
+}
+p.detail_point_text{
+    width:100%; text-align:justify; font:normal 14px/24px "NanumBarunGothic"; color:#3C3C3C; margin-bottom:30px;
+}
+p.detail_point_img{
+    width:100%; float:left; margin-bottom:30px; 
+}
+p.detail_point_img img{
+    width:100%; 
+}
+section#google_map{
+    width:100%; height:500px; float:left; background:url("/images/googlemap_img.gif") no-repeat; background-size:cover; margin-bottom:100px;
+}
+div#good_Con_wrap{
+    width:1200px; min-height:440px; margin:0px auto; 
+}
+section#good_Con_inner{
+    width:100%; height:100%; float:left; border-top:solid 1px #757575; padding-top:30px; position:relative; left:0px; top:0px; margin-bottom:120px; 
+}
+ul#detail_recom_list{
+    width:100%; height:330px; float:left; 
+}
+ul#detail_recom_list li{
+    width:32%; height:100%; float:left; margin-right:2%; 
+}
+ul#detail_recom_list li:last-child{
+    margin-right:0px;
+}
+p.recom_list_img img{
+    width:100%; display:block
+}
+p.recom_list_box{
+    width:100%; height:80px;
+}
+span.recom_list_title{
+    font:normal 18px "NanumBarunGothic"; color:#3C3C3C; text-align:center; display:block; margin-top:20px; margin-bottom:10px; 
+}
+span.recom_list_text{
+    font:normal 14px/21px "NanumBarunGothic"; color:#757575; text-align:center; display:block;
+}
+ul#good_dot_list{
+    width:44px; height:10px; margin:30px auto; display:none;
+}
+ul#good_dot_list li{
+    width:10px; height:10px; float:left; margin-right:7px; border-radius:5px; background:#2F1159; text-indent:-9999px;
+}
+ul#good_dot_list li:last-child{
+    margin-right:0px;
+}

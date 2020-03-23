@@ -1,0 +1,420 @@
+/* 미디어스크린시작 */
+@media screen and (max-width:1200px){
+    header, section#best_inner, section#today_inner, section#infor_inner, section#theme_inner, section#event_inner, footer, 
+    div#subPage_title, nav#subTap_item4_inner, section#Con_inner, nav#subTap_item3_inner, div#good_Con_wrap{
+        width:97%;
+    }
+    section#theme_inner{
+        margin-left:-47.5%; 
+    }
+    div#theme_contents_textbox_inner{
+        width:66%; right:160px;
+    }
+}
+@media screen and (max-width:1030px){
+    div#subPage_wrap, div#Con_wrap, section#Con_inner{
+        min-height:2100px; 
+    }
+    div#acCon_list_wrap, ul#acCon_list{
+        min-height:1300px;
+    }
+    span.acCon_name{
+        margin-top:20px; 
+    }
+    ul#card_list li{
+        height:428px;
+    }
+    ul.submenu_list{
+        left:-13px; 
+    }
+}
+@media screen and (max-width:980px){
+    nav#gnb{
+        width:200px;
+    }
+    div#best_wrap{
+        height:630px;
+    }
+    ul.best_list{
+        height:430px;
+    }
+    div#theme_contents_textbox_inner{
+        right:110px;
+    }
+    ul#event_list{
+        height:700px;
+    }
+    ul#event_list li{
+        width:49.33%; margin-right:1.33%; background-size:cover;
+    }
+    ul#event_list li:nth-child(2){
+        margin-right:0px;
+    }
+    ul#event_list li:nth-child(3){
+        display:none;
+    }
+    span.acCon_text{
+        width:85%; margin:5px auto; 
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        font-size:14px;
+    }
+    nav#mainmenu{
+        display:none;
+    }
+    nav#gnb{
+        display:none;
+    }
+    nav#mobilemenu{
+        display:block;
+    }
+    div#best_wrap{
+        height:500px;
+    }
+    section#best_inner{
+        padding-top:70px;
+    }
+    ul.best_list{
+        height:370px;
+    }
+    ul#today_list li img{
+        width:25%;
+    }
+    div#infor_wrap{
+        height:450px; margin-bottom:70px;
+    }
+    section#infor_inner{
+        padding-top:70px; 
+    }
+    div#theme_wrap{
+        min-height:870px;
+    } 
+    section#theme_inner{
+        height:130px; overflow:hidden;
+    }
+    h2.theme_title{
+        text-indent:15px;
+    }
+    nav#theme_submenu{
+        width:100%; left:0px; top:65px; 
+    }
+    section#theme_contents_wrap{
+        height:740px;
+    }
+    div#theme_contents_img{
+        width:100%; height:50%; 
+    }
+    div#theme_contents_textbox_wrap{
+        width:100%; height:50%; clear:both;
+    }
+    div#theme_contents_textbox_inner{
+        left:40px;
+    }
+    section#event_inner{
+        padding-top:50px;
+    }
+    img#footer_logo{
+        left:50%; margin-left:-74px; top:60px;
+    }
+    div#footer_infor_wrap{
+        left:50%; margin-left:-35%; top:110px; 
+    }
+    div#footer_infor_wrap p{
+        text-align:center;
+    }
+    nav#indicator{
+        display:none;
+    }
+    ul#acCon_list li{
+        width:49%; 
+    }
+    ul#acCon_list li:nth-child(3n){
+        margin-right:2%;
+    }
+    ul#acCon_list li:nth-child(2n){
+        margin-right:0px;
+    }
+    span.acCon_name{
+        font:normal 24px "NanumBarunGothic"; margin-top:23px; 
+    }
+    span.acCon_text{
+        font:normal 16px/24px "NanumBarunGothic"; margin:13px auto;
+    }
+    ul#inforCon_list li{
+        height:870px; float:left; position:relative; left:0px; top:0px;
+    }
+    p.inforCon_textbox{
+        width:100%; height:270px; float:none; padding-top:50px; 
+    }
+    p.infor_left_img, p.infor_right_img{
+        width:100%; float:none; 
+    }
+    p.inforCon_right_textbox, p.inforCon_left_textbox{
+        position:relative; top:-50px;
+    }
+    div#prepare_list_wrap, div#card_list_wrap{
+        margin-top:40px; 
+    }
+    p.prepare_img{
+        display:none;
+    }
+    p.prepare_title, p.prepare_text{
+        margin-left:50px;
+    }
+    ul#card_list li{
+        height:377px;
+    }
+    div#theme_detail_intro{
+        height:710px;
+    }
+    div#detail_intro_img{
+        width:100%; height:50%; 
+    }
+    div#detail_intro_textbox{
+        width:100%; height:45%;
+    }
+    ul#detail_infor_list li{
+        width:49%; height:50%; margin-bottom:12px; padding:30px;
+    }
+    ul#detail_infor_list li:nth-child(2n){
+        margin-right:0px;
+    }
+    p.detail_infor_list_title{
+        float:right;
+    }
+    p.detail_infor_list_icon{
+        text-align:left;
+    }
+    p.detail_infor_list_text{
+        width:55%; text-align:right; float:right; margin-top:-80px; 
+    }
+    p.detail_infor_list_link_btn{
+        margin-top:-70px; float:right;
+    }
+    div#theme_detail_point{
+        min-height:950px;
+    }
+    /* 스크립트애니메이션 안하기 위한 동작 */
+    h2.best_title, ul.best_list li, h2.today_title, ul#today_list li, h2.infor_title, ul#infor_list li, 
+    h2.theme_title, ul#theme_contents_text_list li, h2.event_title, ul#event_list li{
+        top:0px; opacity:1;
+    }
+}
+@media screen and (max-width:630px){
+    div#Con_wrap, section#Con_inner{
+        min-height:1000px; 
+    }
+    ul#card_list li{
+        width:49%; 
+    }
+    ul#card_list li:nth-child(3n){
+        margin-right:2%
+    }
+    ul#card_list li:nth-child(2n){
+        margin-right:0px
+    }
+    p.card_textbox{
+        height:160px;
+    }
+    span.card_title{
+        margin-bottom:15px; margin-top:25px;
+    }
+    span.card_text{
+        margin-bottom:20px;
+    }
+    p#event_infor_date{
+        display:none;
+    }
+    div#event_poster{
+        width:98%; margin-bottom:70px;
+    }
+    div#theme_detail_infor{
+        height:615px;
+    }
+    ul#detail_infor_list{
+        height:550px; 
+    }
+    p.detail_infor_list_title{
+        float:none;
+    }
+    p.detail_infor_list_icon{
+        width:100%; text-align:center; 
+    }
+    p.detail_infor_list_text{
+        width:100%; text-align:center; float:none; margin-top:0px;
+    }
+    p.detail_infor_list_link_btn{
+        text-align:center; margin:0px auto; margin-top:0px; float:none;
+    }
+    ul#detail_recom_list li{
+        width:100%; height:100%; float:left; margin-right:0px; 
+    }
+    ul#detail_recom_list li:nth-child(2){
+        display:none
+    }
+    ul#detail_recom_list li:nth-child(3){
+        display:none
+    }
+    ul#detail_recom_list{
+        height:490px; 
+    }
+    ul#good_dot_list{
+        display:block;
+    }
+@media screen and (max-width:480px){
+    div#visual_wrap{
+        display:none;
+    }
+    div#mobile_visual_wrap{
+        display:block;
+    }
+    ul.best_list{
+        height:400px;
+    }
+    ul.best_list li{
+        width:49.333%; margin-right:1.333%; 
+    }
+    ul.best_list li:nth-child(2){
+        margin-right:0px; 
+    }
+    ul.best_list li:nth-child(3), ul.best_list li:nth-child(4){
+        display:none;
+    }
+    ul#today_list li img{
+        width:30%;
+    }
+
+    div#infor_wrap{
+        height:920px; 
+    }
+    ul#infor_list li{
+        width:100%; height:100%; float:left; margin-right:0px; margin-bottom:12px;
+    }    
+    div#theme_contents_textbox_inner{
+        top:45px;
+    }
+    ul#event_list{
+        height:700px;
+    }
+    ul#event_list li{
+        width:100%; 
+    }
+    ul#event_list li:nth-child(2), ul#event_list li:nth-child(3){
+        display:none;
+    }
+    div#Con_title{
+        height:80px;
+    }
+    div#Con_title p{
+        width:95%; font:bold 18px/30px "NanumBarunGothic";
+    }
+    div#acCon_map img{
+        margin-top:20px;
+    }
+    div#acCon_list_wrap{
+        margin-top:50px; 
+    }
+    ul#acCon_list li{
+        width:88%; margin-right:6%; margin-left:6%
+    }
+    span.acCon_name{
+        font:normal 24px "NanumBarunGothic"; margin-top:35px; 
+    }
+    span.acCon_text{
+        font:normal 16px/24px "NanumBarunGothic"; 
+    }
+    div#infor_text{
+        height:200px; margin-top:20px;
+    }
+    ul#inforCon_list li{
+        height:710px; 
+    }
+    p.inforCon_textbox{
+        height:330px; padding-top:50px; 
+    }
+    p.prepare_title{
+        margin-left:30px;
+    }
+    p.prepare_text{
+        display:none;
+    }
+    p.prepare_text_480{
+        display:block; margin-top:15px; margin-left:30px;
+    }
+    div#card_list_wrap{
+        margin-top:10px;
+    }
+    ul#card_list li{
+        height:327px;
+    }
+    span.card_title{
+        margin-bottom:30px; margin-top:40px;
+    }
+    span.card_text{
+        display:none;
+    }
+    div#event_detail_wrap{
+        min-height:1000px;
+    }
+    div#detail_intro_img{
+        width:100%; height:50%;  background-image:url("/images/universal_intro_img_mobile.jpg")
+    }
+    div#detail_intro_textbox{
+        padding:60px; 
+    }
+    p#detail_intro_text{
+        margin-left:5px; 
+    }
+    div#theme_detail_intro{
+        margin-top:10px;
+    }
+    ul#detail_recom_list{
+        height:400px; 
+    }
+    div#quick_top_menu{
+        display:none;
+    }
+}
+@media screen and (max-width:380px){
+    body{
+        font-size:12px;
+    }
+    div#best_wrap{
+        margin-bottom:70px; 
+    }
+    ul.best_list{
+        height:340px; 
+    }
+    div#today_wrap{
+        height:250px;
+    }
+    span.acCon_name{
+        margin-top:20px; 
+    }
+    div#infor_text{
+        margin-top:10px;
+    }
+    ul#inforCon_list li{
+        height:650px; 
+    }
+    p.inforCon_textbox{
+        height:360px; padding-top:30px; 
+    }
+    p span.inforCon_numbox{
+        margin-left:30px;
+    }
+    ul#card_list li{
+        height:250px; 
+    }
+    p.card_textbox{
+        height:118px; 
+    }
+    span.card_title{
+        margin-bottom:20px; margin-top:22px;
+    }
+    ul#detail_recom_list{
+        height:350px; 
+    }
+}
